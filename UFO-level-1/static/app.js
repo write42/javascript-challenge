@@ -17,6 +17,7 @@ function runEnter(){
     var inputVal = input.property("value");
     console.log(inputVal);
     console.log(tableData);
+    var filterUfo = tableData.filter(alien => alien.datetime === inputVal);
 };
 
 tableData.forEach(function(ufo){
