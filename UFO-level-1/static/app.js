@@ -18,3 +18,12 @@ function runEnter(){
     console.log(inputVal);
     console.log(tableData);
 };
+
+tableData.forEach(function(ufo){
+    console.log(ufo);
+    var row = tbody.append("tr");
+    Object.entries(ufo).forEach(function([key,value]){
+        var cell = row.append("td");
+        cell.text(value);
+    });
+});
